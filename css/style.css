@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container{
+    max-width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    background-image: linear-gradient(#4586af,#327545);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.display{
+    max-width: 650px;
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    border: 10px double;
+    display: flex;
+    background-image: linear-gradient(45deg, #417251, #04b1cd);
+    justify-content: center;
+    align-items: center;
+    box-shadow: 20px 5px 20px 10px #42839e;
+}
+
+.drum-machine-buttons{
+    max-width: 400px;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 5px;
+    padding: 45px;
+}
+
+.drum-machine-switchers{
+    max-width: 240px;
+    width: 100%;
+    height: 100%;
+    float: right;
+    position: relative;
+}
+
+.drum-pad{
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    background: #0317199c;
+    color: #fff;
+    box-shadow: 7px 12px 20px 0px #1e7ca3b3;
+}
+
+.drum-pad:hover{
+    background: #03171987;
+    transition: 0.5s;
+}
+
+
+/* switchers section */
+
+.power-btn{
+    width: 50px;
+    height: 30px;
+    background: #e6e6e6;
+    border-radius: 7px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+#melody-names-container{
+    max-width: 150px;
+    width: 100%;
+    height: 15%;
+    background: #104645;
+    border-radius: 7px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,18%);
+}
+
+.bank-btn{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 50px;
+    height: 30px;
+    background: #e6e6e6;
+    border-radius: 7px;
+}
+
+#audio{
+    widows: 100%;
+    height: 30px;
+    position: absolute;
+    top: 10%;
+}
+
+.switcher, .bank-switcher{
+    width: 50%;
+    height: 100%;
+    background: #000;
+    border-radius: 7px 0 0 7px;
+}
+
+.border-class{
+    border-radius: 0 7px 7px 0;
+}
+
+.float-left{
+    float: left;
+}
+
+.float-right{
+    float: right;
+}
+
+.addClass{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    color: #fff;
+}
+
+/* .volume-line{
+    max-width: 150px;
+    width: 100%;
+    height: 5px;
+    border-radius: 50px;
+    background: #123;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.volume-position-pointer{
+    width: 5px;
+    height: 25px;
+    border-radius: 10px;
+    background: red;
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translate(-50%);
+} */
+
